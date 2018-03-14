@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+		<script>
+
+		</script>
+	</head>
+	<body>
+<p>0</p>
+<p>0</p>
+<p>0</p>
+		<script>
+var parags = document.querySelectorAll('p');
+parags.forEach(elem => elem.addEventListener('click',
+	() => window.setInterval(
+	() => elem.innerHTML=Number(elem.innerHTML) +1, 1000)
+));
+		</script>
+	</body>
+</html>

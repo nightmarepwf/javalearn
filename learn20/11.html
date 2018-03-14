@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>hello</title>
+                <style>
+
+                </style>
+		<script>
+function go(elem){
+text=document.getElementById('text');
+text.innerHTML = elem.value;
+}
+		</script>
+	</head>
+	<body>
+<input type="text" value="" placeholder="Введи в меня текст!" id="test" onkeyup="go(this)">
+<span id="text"></span>	
+	</body>
+</html>

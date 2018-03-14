@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+		<script>
+		
+
+
+var str = 'var_text_hello';
+var str2 = [];
+
+var arr = str.split('_');
+str2.push(arr[0]);
+for (var i = 1; i < arr.length; i++) {
+	str2.push(ucfirst(arr[i]));
+}
+
+var newStr = str2.join('');
+alert(newStr);
+
+function ucfirst(str) {
+	return str[0].toUpperCase() + str.substr(1);
+}
+
+		</script>
+	</head>
+	<body>
+		hello world!
+	</body>
+</html>

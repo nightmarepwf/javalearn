@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+	</head>
+<style>
+#elem {
+	width: 100px;
+	height: 100px;
+	padding: 24px;
+	border: 35px solid #BCBCBC;
+	overflow: auto;
+}
+</style>
+	<body>
+<div id="elem"></div>
+<input type="submit" id="button">
+	</body>
+        <script>
+var elem = document.getElementById('elem');
+var button = document.getElementById('button');
+button.addEventListener('click', func);
+
+function func() {
+	alert(elem.scrollWidth);
+}
+         </script>
+
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+	</head>
+<style>
+#elem {
+	width: 100px;
+	height: 100px;
+	padding: 24px;
+	border: 35px solid #BCBCBC;
+	overflow: auto;
+}
+</style>
+	<body>
+<div id="elem"></div>
+
+	</body>
+        <script>
+var elem = document.getElementById('elem');
+elem.addEventListener('click', func);
+
+function func() {
+	var startWidth = this.offsetWidth;
+	var startHeight = this.offsetHeight;
+	this.style.width = startWidth * 2 + 'px';
+	this.style.height = startHeight * 2 + 'px';
+}
+         </script>
+
+</html>

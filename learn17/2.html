@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>Это заголовок тайтл</title> 
+<script> 
+function summator(x) { 
+var sum=0,str=String(x),obj=str.split(''); 
+
+for (var i=0;i<obj.length;i++) { 
+if (obj[i]!=0) sum+=Number(obj[i]); 
+
+} 
+
+if (sum>9) { 
+sum=summator(sum); 
+
+} 
+
+return sum; 
+} 
+alert(summator(9594322433295)); 
+
+
+</script> 
+</head> 
+<body> 
+Это основное содержимое страницы. 
+</body> 
+</html>

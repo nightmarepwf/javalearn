@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+	</head>
+<style>
+
+</style>
+	<body>
+<input type="text" id="text">
+<div id="id1" ></div>
+	</body>
+        <script>
+var elem=document.getElementById('text');
+var elem2=document.getElementById('id1');
+elem.onkeypress=go;
+function go(event) {
+var code=event.keyCode;
+var key=String.fromCharCode(event.keyCode);
+elem2.innerHTML='Нажатая клавиша: '+key;
+}
+         </script>
+
+</html>

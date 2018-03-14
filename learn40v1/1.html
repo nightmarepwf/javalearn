@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+		<script src="jquery-3.3.1.js">
+                </script>
+	</head>
+	<body>
+<p>
+<input type="submit" id="up" >
+<input type="submit" id="down" >
+</p>
+<ol id="list">
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+<li>punkt</li>
+</ol>
+                <script>
+$('#up').click(function(){$('#list').slideUp(1000);});
+$('#down').click(function(){$('#list').slideDown(1000);});
+                </script>
+	</body>
+</html>
